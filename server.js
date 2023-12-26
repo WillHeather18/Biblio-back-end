@@ -8,6 +8,8 @@ const crypto = require('crypto');
 
 const secretKey = crypto.randomBytes(64).toString('hex');
 
+const port = process.env.PORT || 5000;
+
 const app = express();
 
 app.use(cors());
@@ -38,8 +40,8 @@ const userSchema = new mongoose.Schema({
   const Recommendations = mongoose.model('recommendations', recommendationSchema);
   
 
-app.listen(5000, () => {
-    console.log("Server is running on Port: 5000");
+app.listen(port, () => {
+    console.log("Server is running on Port: " + port);
 });
 
 function verifyToken(req, res, next) {
