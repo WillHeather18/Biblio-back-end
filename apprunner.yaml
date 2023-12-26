@@ -1,6 +1,10 @@
 version: 1.0
-runtime: nodejs12
-entrypoint: npm start
+
+runtime: nodejs12 # This should specify the runtime environment correctly
+
 build:
   commands:
-    - npm install
+    - npm install # Install npm dependencies
+
+run:
+  command: "npm start" # Command to start the application
