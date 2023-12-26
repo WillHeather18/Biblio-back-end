@@ -62,6 +62,10 @@ function verifyToken(req, res, next) {
   }
 }
 
+// Health check endpoint
+app.get('/healthcheck', (req, res) => {
+  res.status(200).send('Health check passed');
+});
 
 //Login endpoint
 app.post('/login', async (req, res) => {
