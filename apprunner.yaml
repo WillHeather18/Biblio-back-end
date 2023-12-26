@@ -1,0 +1,6 @@
+version: 1.0
+runtime: nodejs12
+entrypoint: npm start
+build:
+  commands:
+    - npm install
