@@ -8,7 +8,7 @@ const crypto = require('crypto');
 
 const secretKey = crypto.randomBytes(64).toString('hex');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 const app = express();
 
