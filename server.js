@@ -62,6 +62,10 @@ function verifyToken(req, res, next) {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Welcome to my Bibliobox!');
+});
+
 // Health check endpoint
 app.get('/healthcheck', (req, res) => {
   res.status(200).send('Health check passed');
