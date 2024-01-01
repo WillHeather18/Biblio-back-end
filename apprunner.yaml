@@ -1,6 +1,6 @@
 version: 1.0
 
-runtime: nodejs12 # This should specify the runtime environment correctly
+runtime: nodejs20 # This should specify the runtime environment correctly
 
 build:
   commands:
